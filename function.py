@@ -133,7 +133,7 @@ def fix_teen(n):
   if n in [13, 14, 17, 18, 19]:
     return 0
   return n
-print(no_teen_sum(2, 15, 1))
+# print(no_teen_sum(2, 15, 1))
 
 #####################
 ## ~~ PROBLEM 6 ~~ ##
@@ -142,3 +142,15 @@ print(no_teen_sum(2, 15, 1))
 # Return a number of even integers in a given array.
 #
 # Examples
+#
+# count_evens([2, 1, 2, 3, 4]) -> 3
+# count_evens([2, 2, 0]) -> 3
+# count_evens([1, 3, 5]) -> 0
+
+def count_evens(nums):
+  count = 0
+  for i in nums:
+    if i % 2 == 0:
+      count += 1
+  return count
+# print(count_evens([2, 1, 2, 3, 4]))
